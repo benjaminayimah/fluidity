@@ -91,6 +91,10 @@ aside {
     transition: 1s ease .5s;
   }
   ul {
+    a {
+      display: flex;
+      flex: 1;
+    }
     span {
       display: block;
     }
