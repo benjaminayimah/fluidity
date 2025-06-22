@@ -9,10 +9,12 @@ function NavLink({data, isActive, handleClick}) {
       <Link
           key={name} href={url}
           onClick={() => {handleClick(url)}} 
-          className="overflow-hidden relative text-4xl sm:text-5xl md:text-6xl swap-text"
+          className="text-4xl sm:text-5xl md:text-6xl"
           >
-            <div>{name}</div>
-            <p className="absolute">{name}</p>
+            <span className='overflow-hidden relative swap-text'>
+              <div>{name}</div>
+              <p className="absolute">{name}</p>
+            </span>
         </Link> 
     </li>
   )

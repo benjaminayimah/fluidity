@@ -90,11 +90,17 @@ aside {
     padding: 16vh 0 10vh 7.5vw;
     transition: 1s ease .5s;
   }
+  ul {
+    span {
+      display: block;
+    }
+  }
 
   ul[data-type="menu"] {
     a {
       font-weight: 300;
       line-height: .9;
+      padding-block: 12px;
     }
     li.active {
       &::before {

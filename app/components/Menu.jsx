@@ -34,9 +34,9 @@ const Menu = ({handleToggle, menuIsActive }) => {
             <div className="h-full menu-wrapper">
                 <div className="flex flex-col justify-between h-full px-4">
                     <div>
-                        <h5 className="text-neutral-500 text-[0.8rem] mb-8">NAVIGATION</h5>
+                        <h5 className="text-neutral-500 text-[0.8rem] mb-5">NAVIGATION</h5>
                         <nav>
-                            <ul className="flex flex-col gap-6" data-type="menu">
+                            <ul className="flex flex-col" data-type="menu">
                                 { menus.map((data, index) => (
                                 <NavLink
                                         key={index} 
@@ -54,9 +54,11 @@ const Menu = ({handleToggle, menuIsActive }) => {
                             <ul className="flex flex-col gap-2" data-type="socials">
                                 {
                                     socials.slice(0, 3).map((social) => (
-                                        <Link key={social.name} href={social.url} target="_blank" className="overflow-hidden relative text-base swap-text">
-                                            <div>{social.name}</div>
-                                            <p className="absolute">{social.name}</p>
+                                        <Link key={social.name} href={social.url} target="_blank" className="text-base">
+                                            <span className="overflow-hidden relative swap-text">
+                                                <div>{social.name}</div>
+                                                <p className="absolute">{social.name}</p>
+                                            </span>
                                         </Link>
                                     ))
                                 }
@@ -64,9 +66,11 @@ const Menu = ({handleToggle, menuIsActive }) => {
                             <ul className="flex flex-col gap-2" data-type="socials">
                                 {
                                     socials.slice(3, 6).map((social) => (
-                                        <Link key={social.name} href={social.url} target="_blank" className="overflow-hidden relative text-base swap-text">
-                                            <div>{social.name}</div>
-                                            <p className="absolute">{social.name}</p>
+                                        <Link key={social.name} href={social.url} target="_blank" className="text-base">
+                                            <span className="overflow-hidden relative swap-text">
+                                                <div>{social.name}</div>
+                                                <p className="absolute">{social.name}</p>
+                                            </span>
                                         </Link>
                                     ))
                                 }
