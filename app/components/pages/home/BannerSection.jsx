@@ -42,7 +42,6 @@ function BannerSection() {
           <div className='flex h-full items-center justify-center'>
             <div className="flex flex-col gap-[32px] w-[90vw] sm:w-[75vw]">
               <h1 className="leading-[1] tracking-tighter max-w-[55vw] min-w-[330px]">
-                {/* max-w-[55vw] min-w-[240px] */}
                 { words.map((data, index) =>
                       <span
                         key={`${data.word}-${index}`}

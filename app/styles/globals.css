@@ -233,6 +233,8 @@ h3 {
 
 .heroVideoWrapper {
   transform: translateY(8%);
+  min-width: 57px;
+  min-height: 46px;
 }
 
 video {
