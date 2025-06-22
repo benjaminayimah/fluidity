@@ -28,7 +28,7 @@ function WhoWeAre() {
 
 
   return (
-    <section className='flex min-h-[100dvh] justify-center py-20'>
+    <section className='flex min-h-[100vh] justify-center py-20'>
       <div className='w-[90vw] md:w-[80vw] flex items-center'>
         {/* <h2 className='leading-[.8]'><span className='font-medium'>Who</span><br /><i className='font-light'>we are</i></h2> */}
         <div className='py-8 grid grid-cols-1 gap-6 md:gap-20 md:grid-cols-2 [direction:rtl] md:[direction:rtl]'>
