@@ -41,10 +41,10 @@ function HeroVideoSection() {
           y: '0px',
           transition: { duration: 1}
         }}
-        className={`${!isMobile && 'h-[200dvh]'} w-full flex justify-center`}>
+        className={`${!isMobile && 'h-[200vh]'} w-full flex justify-center`}>
         <motion.div
           style={{ scale: isMobile ? 1 : scale, borderRadius: isMobile ? 0 : radius }}
-          className={`${!isMobile ? 'sticky top-0 h-[100dvh]' : 'relative h-[50dvh]'}  w-full overflow-hidden`}>
+          className={`${!isMobile ? 'sticky top-0 h-[100vh]' : 'relative h-[50vh]'}  w-full overflow-hidden`}>
           <video
             src='https://res.cloudinary.com/dl4wyqxbe/video/upload/v1234567890/short_txqtvq.mp4'
             preload="auto"

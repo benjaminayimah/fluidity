@@ -21,7 +21,7 @@ function Footer() {
 
 
   return (
-    <footer ref={targetRef} className='bg-black min-h-[100dvh] flex justify-center items-center overflow-hidden text-white text-center relative'>
+    <footer ref={targetRef} className='bg-black min-h-[100vh] flex justify-center items-center overflow-hidden text-white text-center relative'>
       <motion.div
       style={{height, top}}
         className='absolute rounded-[100%] z-[1] w-[120%] bg-white bottom-curve'>

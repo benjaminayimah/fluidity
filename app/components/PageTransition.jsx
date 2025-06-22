@@ -127,14 +127,14 @@ const SVG = ({width, height, curveHeight}) => {
       top: '-300px'
     },
     enter: {
-      top: "-100dvh",
+      top: "-100vh",
       transition: {
         duration: 0.75,
         delay: 0.3,
         ease: [0.76, 0, 0.24, 1]
       },
       transitionEnd: {
-        top: '100dvh'
+        top: '100vh'
       }
     },
     exit: {

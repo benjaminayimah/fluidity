@@ -37,7 +37,7 @@ function BannerSection() {
     <motion.section
       ref={targetRef}
       style={{translateY}}
-      className="sticky top-0 h-[58dvh] sm:h-[70dvh] lg:h-[80dvh]">
+      className="sticky top-0 h-[58vh] sm:h-[70vh] lg:h-[80vh]">
         <div className='relative h-full w-full'>
           <div className='flex h-full items-center justify-center'>
             <div className="flex flex-col gap-[32px] w-[85vw] sm:w-[75vw]">
