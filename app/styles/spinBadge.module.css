@@ -1,0 +1,46 @@
+.spinner {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    mix-blend-mode: difference;
+}
+
+.isoWrapper {
+    height: 70%;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.circleWrapper {
+    width: 120px;
+    height: 120px;
+}
+  
+.circleText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: .5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #fff;
+    /* animation: spin 10s linear infinite; */
+}
+  
+.circleText span {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform-origin: 0 60px;
+}
+  
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  

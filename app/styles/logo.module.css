@@ -1,0 +1,6 @@
+.wrapper {
+  mix-blend-mode: difference;
+  padding: 8px;
+  left: 3%;
+  z-index: 101;
+}
