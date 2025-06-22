@@ -40,8 +40,8 @@ function BannerSection() {
       className="sticky top-0 h-[58vh] sm:h-[70vh] lg:h-[80vh]">
         <div className='relative h-full w-full'>
           <div className='flex h-full items-center justify-center'>
-            <div className="flex flex-col gap-[32px] w-[85vw] sm:w-[75vw]">
-              <h1 className="leading-[1] tracking-tighter max-w-[55vw] min-w-[300px]">
+            <div className="flex flex-col gap-[32px] w-[90vw] sm:w-[75vw]">
+              <h1 className="leading-[1] tracking-tighter max-w-[55vw] min-w-[330px]">
                 {/* max-w-[55vw] min-w-[240px] */}
                 { words.map((data, index) =>
                       <span
