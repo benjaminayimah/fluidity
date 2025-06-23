@@ -17,7 +17,7 @@ export default function Home() {
       <HeroVideo />
       <WhoWeAre />
       <Footer /> 
-      <SpinBadge />
+      {/* <SpinBadge /> */}
     </>
   );
 }
