@@ -20,6 +20,7 @@ const routes = {
   "/": "Welcome",
   "/about": "About",
   "/contact": "Contact",
+  "/projects": "Projects"
 }
 
 

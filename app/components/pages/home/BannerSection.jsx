@@ -6,16 +6,16 @@ import { useScroll, useTransform, motion } from 'framer-motion'
 import Magnetic from '@/app/components/Magnetic';
 
 const words = [
-    { word: 'We', style: '' },
-    { word: 'help', style: '' },
-    { word: 'brands', style: '' },
-    { word: 'craft', style: '', style2: '' },
-    { word: '', style: '', src: 'https://res.cloudinary.com/dl4wyqxbe/video/upload/v1234567890/hero_video_hyf7rq.mp4', video: true },
-    { word: 'delightful', style: 'italic text-gray-400r font-light' },
-    { word: 'digital', style: 'italic text-gray-400r font-light' },
-    { word: 'experiences', style: '' },
+    { word: 'We', style: '', spanStyle: '' },
+    { word: 'help', style: '', spanStyle: '' },
+    { word: 'brands', style: '', spanStyle: '' },
+    { word: 'craft', style: '', spanStyle: 'mt-[-1vw]' },
+    { word: '', style: '', spanStyle: 'mt-[-1vw]', src: 'https://res.cloudinary.com/dl4wyqxbe/video/upload/v1234567890/hero_video_hyf7rq.mp4', video: true },
+    { word: 'delightful', style: 'italic font-light', spanStyle: 'mt-[-1vw]' },
+    { word: 'digital', style: 'italic font-light', spanStyle: 'mt-[-2vw]' },
+    { word: 'experiences', style: '', spanStyle: 'mt-[-2vw]' },
   ]
-
+// text-gray-400
 function BannerSection() {
   const targetRef = useRef(null)
 
@@ -45,7 +45,7 @@ function BannerSection() {
                 { words.map((data, index) =>
                       <span
                         key={`${data.word}-${index}`}
-                        className={`align-top overflow-hidden inline-block mt-[-1.2vw]` }
+                        className={`${data.spanStyle} align-top overflow-hidden inline-block` }
                       >
                         <motion.div
                           className={` ${!data.video ? 'inline-block p-[1vw]' : ''} ${data.style} `}

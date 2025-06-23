@@ -4,6 +4,10 @@
   line-height: 1;
 } */
 
+:root {
+  --menu-transition: .6s all cubic-bezier(0.8, 0.11, 0.2, .9);
+}
+
 .button-outline[data-type="white"] {
   &::before {
     background-color: white;

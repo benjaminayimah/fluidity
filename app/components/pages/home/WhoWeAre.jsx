@@ -3,6 +3,8 @@
 import { useScroll, motion, useTransform } from 'framer-motion';
 import React, { useRef } from 'react'
 import Magnetic from '@/app/components/Magnetic';
+import { useRouter } from 'next/navigation'
+
 
 const words = [
   "We’re", "a", "software", <em key="em1">design</em>, "and", <em key="em2">development</em>, "studio",
@@ -17,12 +19,17 @@ const words = [
 
 
 function WhoWeAre() {
+  const router = useRouter()
+
   const targetRef = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ['start 0.9', 'start 0.25']
   })
 
+
+  
 
 
 
@@ -81,6 +88,7 @@ function WhoWeAre() {
             <div className='mt-13 flex'>
               <Magnetic classes={'inline-block w-full sm:w-auto'}>
                 <motion.button
+                  onClick={() => router.push('/contact')}
                   initial={{ scale: 0.8}}
                   whileInView={{ scale: 1, transition: {duration: .3}}}
                   viewport={{
@@ -88,6 +96,7 @@ function WhoWeAre() {
                       amount: 0.3
                   }}
                   data-type="black"
+                  aria-label="Learn more about us"
                   className='w-full text-nowrap overflow-hidden relative sm:w-auto rounded-full py-16 sm:py-12 px-16 border-[1px] border-black text-black font-medium button-outline'>
                   More about us
                 </motion.button>

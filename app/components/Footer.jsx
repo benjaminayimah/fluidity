@@ -32,7 +32,7 @@ function Footer() {
             className='w-[90vw] px-6'>
             <div className='py-12 sm:mb-15'>
               <h2 className='leading-[1] text-center font-light mb-12 sm:mb-16'>
-                Have a project <br />to discuss?
+                Got a project <br />to discuss?
               </h2>
               <Magnetic classes={'inline-block w-full sm:w-auto'}>
                 <button data-type="white" className='w-full text-nowrap overflow-hidden relative sm:w-auto rounded-full py-16 sm:py-12 px-20 border-[1px] border-white font-medium text-3xl md:text-4xl button-outline'>

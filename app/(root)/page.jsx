@@ -5,7 +5,7 @@ import HeroVideo from '../components/pages/home/HeroVideo'
 import WhoWeAre from '../components/pages/home/WhoWeAre'
 import Footer from "../components/Footer";
 
-// import SpinBadge from '../components/SpinBadge';
+import SpinBadge from '../components/SpinBadge';
 
 export default function Home() {
   
@@ -17,6 +17,7 @@ export default function Home() {
       <HeroVideo />
       <WhoWeAre />
       <Footer /> 
+      <SpinBadge />
     </>
   );
 }

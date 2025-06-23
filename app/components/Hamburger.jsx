@@ -12,7 +12,7 @@ const Hamburger = forwardRef(({ menuIsActive, handleToggle }, ref) => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setDelayedText(menuIsActive);
-        }, 600); 
+        }, 400); 
 
         return () => clearTimeout(timeout);
     }, [menuIsActive]);
